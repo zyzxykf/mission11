@@ -1,0 +1,294 @@
+.background_message_icon(@pic, @format, @size_x, @size_y) {
+	background: url("../img/@{pic}.@{format}") no-repeat center center/0 0;
+	background-size: @size_x @size_y;
+}
+
+
+.bus-wrapper {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	.bus-border {
+		border: 1px solid #fff;
+		padding: 6px;
+	}
+
+	.bus-content {
+		height: 135px;
+		background: #63B8FF;
+		color: #fff;
+		text-align: center;
+		border-bottom: 1px solid #fff;
+	}
+
+	.bus-title {
+		h3 {
+			font-size: 50px;
+			line-height: 75px;
+			font-weight: 500;
+			letter-spacing: 12px;
+		}
+		p {
+			font-size: 25px;
+			line-height: 35px;
+
+		}
+	}
+
+	.bus-message {
+		padding: 15px 85px 15px 30px;
+		padding-right: 90px;
+		position: relative;
+		text-align: left;
+
+		.bus-message-left {
+			display: inline-block;
+			float: left;
+		}
+
+		.message-wel {
+			display: block;
+			height: 35px;
+			font-size: 35px;
+			line-height: 35px;
+			margin-bottom: 10px;
+			font-weight: 700;
+			letter-spacing: 7px;
+		}
+
+		.message-tel {
+			font-size: 18px;
+			line-height: 25px;
+			color: #EEEE00;
+			font-weight: 700;
+
+			&>i {
+				font-size: 20px;
+				font-style: normal;
+			}
+		}
+
+		.message-icon {
+			display: block;
+			float: left;
+			margin-top:5px;
+
+			.message-inlineBlock {
+				display: inline-block;
+				height: 30px;
+				font-size: 15px;
+				line-height: 30px;
+				margin-right: 5px;
+				float: left;
+
+				i {
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					float: left;
+					
+
+					&.metro-icon {
+						.background_message_icon(metro1, jpg, 25px, 25px);
+					}
+
+					&.hospital-icon {
+						.background_message_icon(8, png, 25px, 25px);
+					}
+
+					&.traffic-icon {
+						.background_message_icon(timg, jpg, 25px, 25px);
+					}
+
+					&.public-icon {
+						.background_message_icon(font565, png, 25px, 25px);
+					}
+				}
+
+				p {
+					display: inline-block;
+					float: left;
+				}
+			}
+		}
+
+		.bus-message-right {
+			display: inline-block;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			width: 70px;
+			height: 104px;
+			background: #fff;
+
+			p {
+				height: 30px;
+				line-height: 30px;
+				font-size: 15px;
+				color: #000;
+				text-align: center;
+			}
+		}
+	}
+
+	.bus-line {
+		background: #fff;
+		height: 153px;
+
+		.line-title {
+			width: 686px;
+			height: 30px;
+			background: #63B8FF;
+			color: #fff;
+			padding: 0 10px 0 70px;
+
+			.line-num {
+				font-size: 27px;
+				line-height: 30px;
+				height: 30px;
+				margin-right: 80px;
+				color: #FF0000;
+				float: left;
+				font-weight: 700;
+			}
+
+			.line-endStation {
+				font-size: 20px;
+				line-height: 30px;
+				height: 30px;
+				font-weight: 700;
+				float: left;
+			}
+
+			.line-price {
+				margin-top: 12px;
+				height: 18px;
+				line-height: 18px;
+				font-size: 12px;
+				float: left;
+				margin-left: 80px;
+			}
+
+			.line-group {
+				margin-top: 8px;
+				height: 22px;
+				line-height: 22px;
+				font-size: 15px;
+				float: right;
+				letter-spacing: 3px;
+			}
+		}
+
+		.line-busStop {
+			height: 85px;
+			width: 686px;
+			padding: 0 18px;
+			color: #000;
+
+			.lineBusStop-wrapper {
+				display: flex;
+				width: 650px;
+				height: 85px;
+				list-style: none;
+
+				.lineBusStop-point {
+					flex: 1;
+					text-align: center;
+
+					p {
+						position: relative;
+						margin: 18px auto 0;
+						width: 15px;
+						font-size: 11px;
+						line-height: 13px;
+
+						&.current-stop {
+							color: #EE0000;
+							border: 1px solid #EE0000;
+						}
+
+						.metro-icon-point {
+							display: block;
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							left: 0;
+							top: -17px;
+							.background_message_icon(metro1, jpg, 13px, 13px);
+						}
+					}
+				}
+			}
+		}
+
+		.line-road {
+			display: flex;
+			margin: 2px auto 3px;
+			width: 650px;
+			height: 15px;
+			border: 1px solid #EE0000;
+
+			li {
+				border-right: 1px solid #EE0000;
+				width: 100%;
+				height: 13px;
+				font-size: 12px;
+				line-height: 13px;
+				color: #EE0000;
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+
+			.r-4 {
+				flex: 4;
+				letter-spacing: 4px;
+			}
+			.r-2 {
+				flex: 2;
+			}
+			.r-3 {
+				flex: 3;
+			}
+			.r-5 {
+				flex: 5;
+				letter-spacing: 5px;
+			}
+			.r-6 {
+				flex: 6;
+				letter-spacing: 6px;
+			}
+			.r-1 {
+				flex: 1;
+			}
+		}
+
+		.line-footer {
+			width: 686px;
+			padding: 0 18px;
+			height: 18px;
+			background: #EEEE00;
+
+			.line-nextStop {
+				height: 18px;
+				font-size: 15px;
+				line-height: 18px;
+				color: #000;
+				float: left;
+				display: inline-block;
+			}
+
+			.line-time {
+				height: 18px;
+				font-size: 12px;
+				line-height: 18px;
+				color: #000;
+				float: right;
+				display: inline-block;
+			}
+		}
+	}
+}
+

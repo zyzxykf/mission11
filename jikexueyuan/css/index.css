@@ -1,0 +1,85 @@
+body, ul, dl, dt, dd, h2 {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+div, ul, li, input, span, a, dd, dl, p {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+ul {
+	list-style: none;
+}
+
+h2, h3 {
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+address, cite, dfn, em, i, var {
+    font-style: normal;
+}
+
+.w-1000 {
+	width: 1000px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.mar-t20 {
+	margin-top: 20px;
+}
+
+.f-r {
+	float: right;
+}
+
+#main {
+	width: 776px;
+}
+
+.tagGather .bd {
+	color: #666;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.sort {
+	position: relative;
+	z-index: 500;
+}
+
+.sort .wrap {
+	box-sizing: content-box;
+	height: 38px;
+	background: #fff;
+	color: gray;
+	line-height: 38px;
+}
+
+.sort .sortMode {
+	overflow: visible;
+	float: left;
+	height: 38px;
+}
